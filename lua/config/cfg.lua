@@ -1,0 +1,12 @@
+vim.g.mapleader = " "
+vim.o.number = true
+vim.o.relativenumber = true
+vim.o.ignorecase = true
+vim.o.smartcase = true
+vim.o.cursorline = true
+vim.o.scrolloff = 10
+vim.o.list = true
+vim.o.confirm = true
+vim.opt.cursorline = true
+vim.opt.expandtab = true
+vim.opt.showcmd = true

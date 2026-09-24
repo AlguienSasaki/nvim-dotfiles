@@ -1,0 +1,3 @@
+Mason           = es solo el instalador de los servidores LSP
+nvim-lspconfig  = Activador INDIVIDUAL de los servidores LSP y configraciones
+none-ls         = Formateador y completador

@@ -1,0 +1,6 @@
+require("config.lazy")
+require("lazy").setup("plugins")
+require("config.keymaps")
+require("config.cfg")
+require("kanagawa").load("dragon")
+require("telescope").load_extension("ui-select")
