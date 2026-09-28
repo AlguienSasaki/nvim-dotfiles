@@ -17,6 +17,8 @@ return {
 					"bashls",
 					"texlab",
 					"zk",
+					"groovyls",
+					"kotlin_lsp",
 				},
 			},
 			dependencies = {
@@ -55,6 +57,7 @@ return {
 					"shfmt",
 					"shellcheck",
 					"isort",
+					"npm-groovy-lint",
 					"autoflake",
 				},
 			})
