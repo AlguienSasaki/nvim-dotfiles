@@ -41,7 +41,7 @@ vim.keymap.set("n", "<leader>n", NumberToggle, { noremap = true })
 vim.keymap.set("n", "<leader>w", ":w!<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>q", ":q<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>Q", ":wq!<CR>", { noremap = true })
-vim.keymap.set("n", "<leader>t", ":ToggleTerm<CR>", { noremap = true, silent = true })
+--vim.keymap.set("n", "<leader>tj", ":ToggleTerm<CR>", { noremap = true, silent = true })
 -- Ctrl + Shift + c for Clipboard outside neovim
 vim.keymap.set("v", "<C-c>", [["*y :let @+=@*<CR>]], { noremap = true, silent = true })
 
@@ -78,6 +78,18 @@ end)
 vim.keymap.set("n", "<Leader>bl", function()
 	require("dap").set_breakpoint(nil, nil, vim.fn.input("Log point message: "))
 end)
+
+
+local Terminal = require('toggleterm.terminal').Terminal
+local float_term = Terminal:new({ direction = 'float' })
+
+function _toggle_float_term()
+  float_term:toggle()
+end
+
+
+vim.keymap.set('n', '<leader>t', '<cmd>lua _toggle_float_term()<CR>', { noremap = true, silent = true })
+
 
 --vim.keymap.set("n", "<leader>q", function()
 --	local ok, dapui = pcall(require, "dapui")
