@@ -19,7 +19,7 @@ return {
 
 					-- Stylua for lua
 					null_ls.builtins.formatting.stylua,
-					null_ls.builtins.completion.spell,
+					-- null_ls.builtins.completion.spell,
 					-- Clang for c++
 					null_ls.builtins.formatting.clang_format,
 					-- Black for python
