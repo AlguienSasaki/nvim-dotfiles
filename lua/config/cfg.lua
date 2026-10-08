@@ -10,3 +10,4 @@ vim.o.confirm = true
 vim.opt.cursorline = true
 vim.opt.expandtab = true
 vim.opt.showcmd = true
+vim.opt.conceallevel = 2
